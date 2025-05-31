@@ -23,6 +23,23 @@ const UserCard: React.FC<UserProps> = ({
         <span>Website: hildegard.org {website}</span>
         <span>Company: Romaguera-Crona {company?.name}</span>
       </div>
+      <div className="grid grid-cols-3 gap-2 ">
+          {
+            username?.map((user: UserProps, key: number) => (
+              <UserCard
+                key={key}
+                name={user.name}
+                id={user.id}
+                username={user.username}
+                email={user.email}
+                address={user.address}
+                phone={user.phone}
+                website={user.website}
+                company={user.company}
+              />
+            ))
+          }
+        </div>
     </div>
   );
 };
