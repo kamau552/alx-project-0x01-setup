@@ -11,11 +11,11 @@ const UserCard: React.FC<UserProps> = ({
     company,
 }) => {
   return (
-    <div className="max-w-sm mx-auto my-6 p-6 bg-amber-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="max-w-sm mx-auto my-6 p-6 bg-teal-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
       <div className="mb-4">
         <h2 className="text-2xl font-semibold text-black">{username}</h2>
       </div>
-      <div className="flex flex-col gap-2 text-gray-700 text-sm">
+      <div className="flex flex-col gap-2 text-white text-sm">
         <span>Name: {name}</span>
         <span>Post ID: {id}</span>
         <span>Username: {username}</span>
