@@ -16,13 +16,13 @@ const UserCard: React.FC<UserProps> = ({
         <h2 className="text-2xl font-semibold text-black">{username}</h2>
       </div>
       <div className="flex flex-col gap-2 text-gray-700 text-sm">
-        <span>Name: Leanne Graham {name}</span>
-        <span>Post ID: 1 {id}</span>
-        <span>Username: Bret  {username}</span>
-        <span>Email: Sincere@april.biz {email}</span>
-        <span>Phone:1-770-736-8031 x56442  {phone}</span>
-        <span>Website: hildegard.org {website}</span>
-        <span>Company: Romaguera-Crona {company?.name}</span>
+        <span>Name: {name}</span>
+        <span>Post ID: {id}</span>
+        <span>Username: {username}</span>
+        <span>Email:{email}</span>
+        <span>Phone: {phone}</span>
+        <span>Website: {website}</span>
+        <span>Company: {company?.name}</span>
       </div>
     </div>
   );
